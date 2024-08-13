@@ -25,21 +25,18 @@ echo "|_____________________|"
 echo "welcome to calcualtor.sh"
 sleep 1
 
-echo "provide two integers"
-sleep .5
+echo "Input integers and specify the operation as prompted."
+sleep 1
 
 echo "Insert first integer"
 read first_integer
 
+echo "What operation would you like to perform?"
+read operation
+
 echo "Insert second interger"
 read second_integer
 
-echo "What operation would you like to perform"
-#echo "type a for addition"
-#echo "type s for substraction"
-#echo "type m for multiplication"
-#echo "type d for division"
-read operation
 
 if [[ $operation == "+" ]] ; then res=`echo $first_integer + $second_integer |bc`
 
